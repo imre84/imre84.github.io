@@ -40,7 +40,7 @@ The fields I haven't populated:
 * `ntp0-ip`: as per official docs: "Value is exported to `/proc/net/ipconfig/ntp_servers`, but is otherwise unused" and then later on "Note that the kernel will not synchronise the system time with any NTP servers it discovers; this is the responsibility of a user space process". Maybe somehow this value can survive the boot process and get used by the ntp daemon, other than that, seems to be completely superfluous.
 
 ## `24` vs `255.255.255.0`
-CIDR stands for Classless Inter-Domain Routing, `127.0.0.1/8` is what we call the CIDR style IP notation. However the 4th parameter in `ip` is a dotted netmask. When the ip parsing was written in the kernel, the dotted representation was still the norm, and kernel wants to maintain backwards compatibility.
+CIDR stands for Classless Inter-Domain Routing, `127.0.0.1/8` is what we call the CIDR style IP notation. However the fourth parameter in `ip` is a dotted netmask. When the ip parsing was written in the kernel, the dotted representation was still the norm, and kernel wants to maintain backwards compatibility.
 
 ## Conclusion
 
